@@ -18,8 +18,8 @@ create table company (
 	id				bigint primary key auto_increment,
 	name			varchar(255) not null,
     address			varchar(255) not null,
-    hompage			varchar(255) not null,
-    phone_numbrer	varchar(255) not null,
+    homepage		varchar(255) not null,
+    phone_number	varchar(255) not null,
     member_id		bigint not null,
     foreign key(member_id) references member(id)
 );
