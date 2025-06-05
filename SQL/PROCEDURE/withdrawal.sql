@@ -1,0 +1,20 @@
+delimiter //
+create procedure withdrawal (in emailInput varchar(255), in passwordInput varchar(255))
+begin
+	select state, password into @state, @password from member where email = emailInput;
+	if (select 1=1 from member where email = emailInput) then
+		if @state = 'online' then
+			if @password = passwordInput then
+				select "탈퇴 완료";
+				update member set state = 'withdraw' where email = emailInput;
+			else
+				select "비밀번호가 틀렸습니다.";
+			end if;
+		else
+			select "오프라인 상태입니다.";
+		end if;
+	else 
+		select "존재하지 않는 계정입니다.";
+	end if;
+end //
+delimiter ;
