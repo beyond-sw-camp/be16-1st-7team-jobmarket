@@ -83,6 +83,12 @@ create table review (
     foreign key(company_id) references company(id)
 );
 
+-- 태그 테이블
+create table tag (
+	id				bigint primary key auto_increment,
+    contents		varchar(255)
+);
+
 -- 태그_리뷰 테이블
 create table tag_review (
 	id				bigint primary key auto_increment,
@@ -90,10 +96,4 @@ create table tag_review (
     review_id		bigint not null,
     foreign key(review_id) references review(id),
     foreign key(tag_id) references tag(id)
-);
-
--- 태그 테이블
-create table tag (
-	id				bigint primary key auto_increment,
-    contents		varchar(255)
 );
