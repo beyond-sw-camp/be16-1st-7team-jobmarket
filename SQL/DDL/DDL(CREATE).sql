@@ -53,10 +53,11 @@ create table job_posting (
 -- 지원내역 테이블
 create table appli_record (
 	id				bigint primary key auto_increment,
-    member_id		bigint not null,
+    resume_id		bigint not null,
     posting_id		bigint not null,
     appli_time		datetime not null default CURRENT_TIMESTAMP,
-    foreign key(member_id) references member(id),
+    result          enum('apply', 'passed', 'failed') not null default 'apply',
+    foreign key(resume_id) references resume(id),
     foreign key(posting_id) references job_posting(id)
 );
 
