@@ -1,0 +1,9 @@
+drop table tag_review;
+drop table tag;
+drop table review;
+drop table resume;
+drop table scrap;
+drop table appli_record;
+drop table job_posting;
+drop table company;
+drop table member;
