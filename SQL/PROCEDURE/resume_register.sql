@@ -7,7 +7,7 @@ create procedure RESUME_001(
     in memberIdInput bigint
 )
 begin
-    if exists(select 1 from member where id = memberIdInput and member_type = 'user') then
+    if exists(select 1 from member where id = memberIdInput and member_type = 'user' and state = 'online') then
         insert into resume (title, contents, member_id)
         values (titleInput, contentsInput, memberIdInput);
 

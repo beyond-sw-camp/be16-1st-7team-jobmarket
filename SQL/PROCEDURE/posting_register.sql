@@ -16,7 +16,7 @@ begin
     declare v_company_id bigint;
 
     -- 회사 계정 확인
-    if exists(select 1 from member where id = memberIdInput and member_type = 'company') then
+    if exists(select 1 from member where id = memberIdInput and member_type = 'company' and state = 'online') then
         -- 회사 ID 조회
         select id into v_company_id from company where member_id = memberIdInput;
 
