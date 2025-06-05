@@ -9,13 +9,13 @@ begin
 				select "로그아웃 되었습니다.";
 				update member set state = 'offline' where email = emailInput;
 			else
-				select "온라인 상태가 아닙니다.";
+				signal sqlstate '45000' set message_text = "온라인 상태가 아닙니다.";
 			end if;
 		else
-			select "비밀번호가 틀렸습니다.";
+			signal sqlstate '45000' set message_text = "비밀번호가 틀렸습니다.";
 		end if;
 	else 
-		select "존재하지 않는 계정입니다.";
+		signal sqlstate '45000' set message_text = "존재하지 않는 계정입니다.";
 	end if;
 end //
 delimiter ;

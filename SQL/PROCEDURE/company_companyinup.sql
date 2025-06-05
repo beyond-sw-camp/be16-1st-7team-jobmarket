@@ -14,13 +14,13 @@ begin
 					select "회사 정보 등록 완료";
 				end if;
 			else
-				select "회사 계정이 아니라 등록할 수 없습니다.";
+				signal sqlstate '45000' set message_text = "회사 계정이 아니라 등록할 수 없습니다.";
 			end if;
 		else
-			select "온라인 상태가 아닙니다.";
+			signal sqlstate '45000' set message_text = "온라인 상태가 아닙니다.";
 		end if;
 	else 
-		select "존재하지 않는 계정입니다.";
+		signal sqlstate '45000' set message_text = "존재하지 않는 계정입니다.";
 	end if;
 end //
 delimiter ;
