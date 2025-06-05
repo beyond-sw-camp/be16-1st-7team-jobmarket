@@ -19,7 +19,16 @@
 
 설명: 이 프로젝트는 채용 사이트(예: 사람인)를 모델로 한 데이터베이스를 설계 및 구현하는 것을 목표로 합니다. 사용자, 기업, 채용공고, 지원 이력 등 주요 엔티티를 포함한 ERD 모델링과 DB 아키텍처를 수립하고, 이를 기반으로 테스트용 DML 쿼리를 작성합니다.
 
-기반 기술: MariaDB, ERDCloud, Workbench, DataGrip, SQL
+### 🛠️ 기반 기술
+
+<p align="center">
+  <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" />
+  <img src="https://img.shields.io/badge/ERDCloud-1F1F1F?style=for-the-badge&logo=cloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL%20Workbench-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/DataGrip-000000?style=for-the-badge&logo=datagrip&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=sqlite&logoColor=white" />
+</p>
+
 
 ## 📂 기반기술 프로젝트 산출물 목록
 
