@@ -1,3 +1,4 @@
+-- 회사 정보 등록 and 수정 프로시저
 delimiter //
 create procedure companyinup (in emailInput varchar(255), in companynameInput varchar(255), in addressInput varchar(255), in homepageInput varchar(255), in phonenumInput varchar(255))
 begin

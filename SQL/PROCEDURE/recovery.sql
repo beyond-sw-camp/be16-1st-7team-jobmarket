@@ -1,3 +1,4 @@
+-- 회원 복구 프로시저
 delimiter //
 create procedure recovery (in emailInput varchar(255), in passwordInput varchar(255))
 begin

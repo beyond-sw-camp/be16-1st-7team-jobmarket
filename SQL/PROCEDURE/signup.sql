@@ -1,3 +1,4 @@
+-- 회원 가입 프로시저
 delimiter //
 create procedure signup (in emailInput varchar(255), in nameInput varchar(255), in passwordInput varchar(255), in typeInput int)
 begin

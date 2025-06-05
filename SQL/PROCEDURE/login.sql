@@ -1,3 +1,4 @@
+-- 로그인 프로시저
 delimiter //
 create procedure login (in emailInput varchar(255), in passwordInput varchar(255))
 begin

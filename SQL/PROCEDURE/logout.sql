@@ -1,3 +1,4 @@
+-- 로그아웃 프로시저
 delimiter //
 create procedure logout (in emailInput varchar(255), in passwordInput varchar(255))
 begin

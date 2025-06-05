@@ -1,3 +1,4 @@
+-- 회사 정보 삭제 프로시저
 delimiter //
 create procedure companydel (in emailInput varchar(255))
 begin

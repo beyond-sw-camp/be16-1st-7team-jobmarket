@@ -1,3 +1,4 @@
+-- 회원 탈퇴 프로시저
 delimiter //
 create procedure withdrawal (in emailInput varchar(255), in passwordInput varchar(255))
 begin

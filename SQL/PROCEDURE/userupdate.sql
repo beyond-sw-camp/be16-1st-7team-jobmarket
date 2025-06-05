@@ -1,3 +1,4 @@
+-- 유저 정보 수정 프로시저
 delimiter //
 create procedure userupdate (in emailInput varchar(255), in nameInput varchar(255), in passwordInput varchar(255))
 begin
