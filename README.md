@@ -1021,7 +1021,7 @@ call scrapdelete(1, 1);
 </details>
 
 <details>
-<summary>⭐ 기업 리뷰 테이블</summary>
+<summary>⭐ 기업 리뷰 프로시저</summary>
 <div markdown="1">
 
 <details>
