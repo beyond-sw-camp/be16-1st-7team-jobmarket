@@ -1,4 +1,5 @@
--- 회원가입 프로시저저
+-- 회원가입 프로시저
+delimiter //
 CREATE PROCEDURE signup (in emailInput varchar(255), in nameInput varchar(255), in passwordInput varchar(255), in typeInput int)
 begin
 	if (select 1=1 from member where email = emailInput) then
@@ -12,4 +13,5 @@ begin
             select '회사계정 가입 완료!' as message;
 		end if;
 	end if;
-end
+end //
+delimiter ;
