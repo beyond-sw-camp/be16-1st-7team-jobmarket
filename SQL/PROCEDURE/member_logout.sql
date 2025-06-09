@@ -7,6 +7,7 @@ begin
 		if @password = passwordInput then
 			if @state = 'online' then
 				update member set state = 'offline' where email = emailInput;
+				select '로그아웃 완료!' as message;
 			else
 				signal sqlstate '45000' set message_text = '온라인 상태가 아닙니다.';
 			end if;

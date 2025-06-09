@@ -8,6 +8,7 @@ begin
 			select state into @post_state from job_posting where id = postingIdInput;
 			if @post_state = 'hiring' then
 				insert into scrap(member_id, posting_id) values(memIdInput, postingIdInput);
+                select '스크랩 추가 완료!' as message;
 			else
 				signal sqlstate '45000' set message_text = '채용중인 공고가 아닙니다.';
 			end if;

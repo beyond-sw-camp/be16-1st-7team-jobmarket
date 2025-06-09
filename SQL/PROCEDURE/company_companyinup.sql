@@ -8,8 +8,10 @@ begin
 			if @type = 'company' then
 				if (select 1=1 from company where member_id = @id) then
 					update company set name = companynameInput, address = addressInput, homepage = homepageInput, phone_number = phonenumInput where member_id = @id;
+					select '회사정보 수정 완료!' as message;
 				else
 					insert into company(name, address, homepage, phone_number, member_id) values(companynameInput, addressInput, homepageInput, phonenumInput, @id);
+					select '회사정보 등록 완료!' as message;
 				end if;
 			else
 				signal sqlstate '45000' set message_text = '회사 계정만 등록 가능';

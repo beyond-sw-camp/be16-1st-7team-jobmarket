@@ -8,6 +8,7 @@ begin
 			if (select 1=1 from review where id = reviewIdInput and member_id = memIdInput) then
 				delete from tag_review where review_id = reviewIdInput;
 				delete from review where id = reviewIdInput;
+                select '리뷰 삭제 완료!' as message;
 			else
 				signal sqlstate '45000' set message_text = '본인 리뷰가 아닙니다.';
 			end if;

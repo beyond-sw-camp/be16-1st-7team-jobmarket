@@ -8,6 +8,7 @@ begin
 			if (select 1=1 from scrap where id = scrapIdInput) then
 				if (select 1=1 from scrap where id = scrapIdInput and member_id = memIdInput) then
 					delete from scrap where id = scrapIdInput;
+                    select '스크랩 삭제 완료!' as message;
 				else
 					signal sqlstate '45000' set message_text = '본인 스크랩이 아닙니다.';
 				end if;

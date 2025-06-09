@@ -7,6 +7,7 @@ begin
 		if @state = 'online' then
 			if @password = passwordInput then
 				update member set state = 'withdraw' where email = emailInput;
+				select '회원 탈퇴 완료!' as message;
 			else
 				signal sqlstate '45000' set message_text = '비밀번호가 틀렸습니다.';
 			end if;

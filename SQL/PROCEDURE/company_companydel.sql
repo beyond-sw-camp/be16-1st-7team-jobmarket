@@ -8,6 +8,7 @@ begin
 			if @type = 'company' then
 				if (select 1=1 from company where member_id = @id) then
 					delete from company where member_id = @id;
+					select '회사 정보 삭제 완료!' as message;
 				else
 					signal sqlstate '45000' set message_text = '등록한 회사 정보가 없음';
 				end if;

@@ -6,8 +6,10 @@ begin
 	else 
 		if typeInput = 0 then
 			insert into member(email, name, password) values(emailInput, nameInput, passwordInput);
+            select '개인계정 가입 완료!' as message;
 		else 
 			insert into member(email, name, password, member_type) values(emailInput, nameInput, passwordInput, 'company');
+            select '회사계정 가입 완료!' as message;
 		end if;
 	end if;
 end

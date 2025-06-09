@@ -17,6 +17,7 @@ begin
 					select id into @tag_id from tag order by id desc limit 1;
 				end if;
 				insert into tag_review(review_id, tag_id) values(@review_id, @tag_id);
+                select '리뷰 등록 완료!' as message;
 			end if;
 		else
 			signal sqlstate '45000' set message_text = '온라인 상태가 아닙니다.';
