@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=7%20Team%20Job%20Market&desc=DB%20프로젝트&descAlignY=65&fontSize=90" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=7%20Team%20Job%20Market&desc=DB%20프로젝트&fontAlignY=35&descAlign=80&descAlignY=50&fontSize=80" />
 
 ## 📚 목차
 
