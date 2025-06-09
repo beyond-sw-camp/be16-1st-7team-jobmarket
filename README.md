@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=7%20Team%20Job%20Market&desc=DB%20프로젝트&descAlignY=65&fontSize=90" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=7%20Team%20Job%20Market&desc=DB%20프로젝트&descAlignY=65&fontSize=90" />
 
 ## 📚 목차
 
@@ -23,7 +23,7 @@
 
 ## 📌 프로젝트 개요
 
-## 프로젝트명: 채용 플랫폼 기반 데이터베이스 설계 (사람인 클론 DB)
+### 채용 플랫폼 기반 데이터베이스 설계 (사람인 클론 DB)
 
 이 프로젝트는 채용 사이트(예: 사람인)를 모델로 한 데이터베이스를 설계 및 구현하는 것을 목표로 합니다. 사용자, 기업, 채용공고, 지원 이력 등 주요 엔티티를 포함한 ERD 모델링과 DB 아키텍처를 수립하고, 이를 기반으로 테스트용 DML 쿼리를 작성합니다.
 
@@ -54,12 +54,18 @@
 
 ## 📄 테이블 명세서 및 요구사항 명세서
 
+![requirement_statement_1](https://github.com/user-attachments/assets/f3e5c12f-6f44-44a5-93f1-c57533d88471)
+![requirement_statement_2](https://github.com/user-attachments/assets/8eefa237-f1a0-4689-9983-7061393b32e3)
+![requirement_statement_3](https://github.com/user-attachments/assets/59865f17-67d1-4515-8535-c439ab07c543)
+
 [테이블 명세서](https://docs.google.com/spreadsheets/d/1hTqacqHRHbYbnGm-4wQmmA5KcH_lW9ZH21sl9GiFgTY/edit?gid=356922980#gid=356922980)
 
 [요구사항 명세서](https://docs.google.com/spreadsheets/d/1hTqacqHRHbYbnGm-4wQmmA5KcH_lW9ZH21sl9GiFgTY/edit?gid=933404418#gid=933404418)
 
 
 ## 🗂️ WBS(Work Breakdown Structure)
+
+![wbs](https://github.com/user-attachments/assets/ee96ccc6-54c3-4564-a292-d3ab4e0475fa)
 
 [WBS 링크](https://docs.google.com/spreadsheets/d/1hTqacqHRHbYbnGm-4wQmmA5KcH_lW9ZH21sl9GiFgTY/edit?gid=0#gid=0)
 
