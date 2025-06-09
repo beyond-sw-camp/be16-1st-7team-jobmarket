@@ -74,7 +74,7 @@ create table scrap (
 -- 기업리뷰 테이블
 create table review (
 	id				bigint primary key auto_increment,
-    rating			decimal(2, 2) not null default 0.00,
+    rating			decimal(2, 1) not null default 0.0,
     contents		varchar(1000) not null,
     create_time		datetime not null default CURRENT_TIMESTAMP,
     update_time		datetime,
